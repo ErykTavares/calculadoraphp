@@ -1,0 +1,155 @@
+@font-face {
+    font-family: Calculator;
+    src: url(./font/Calculator.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    list-style-type: none;
+}
+
+a, a:hover{
+    color: black;
+    text-decoration: none;
+}
+
+body{
+    background-color:#f8f8ff
+}
+
+main, header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.calculadora{
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    width:400px;
+    height: 400px;
+    background-color: #73BCD9;
+    border-radius: 10px;
+    box-shadow: 0 10px #4f8296 ;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form .numbers{
+    margin-top: -200px;
+    margin-left: -93px;
+}
+
+form .side{
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+
+form .numbers{
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+}
+
+form .output{
+    width: 368px;
+    height:40px;
+    border-radius: 10px;
+    border: 3px solid #124f68; 
+    background-color: #DBDAD8;
+    outline: none;
+    margin-bottom: 20px;
+    text-align: right;
+    font-family:Calculator;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+/* buttons */
+
+form .button{
+    width: 80px;
+    height: 40px;
+    background-color:#4EBFAB;
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 0px 5px#409484;
+    font-size: 2rem;
+}
+
+form .button:hover{
+    transform: scale(1.08);
+}
+
+form .buttonDot{
+    margin-left: 95px;
+}
+
+form .buttonZero{
+    width:170px ;
+}
+
+form .buttonResult{
+    height: 90px;
+    font-size: 3rem;
+    background-color: #D95E52;
+    box-shadow: 0 5px #a8483f;
+}
+
+form .buttonClean{
+    background-color:#CAD959 ;
+    box-shadow: 0 5px #a0ac46;
+}
+
+
+footer{
+    width: 100%;
+    height: 108px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #d3d3d3;
+    
+}
+
+footer h6 {
+    padding-top: 15px;
+    font-size: 16px;
+    transition: .5s;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+   
+}
+
+footer li {
+    padding: 0 10px;
+}
+
+footer img{
+    width:30px;
+    height: 30px;
+    transition: .5s;
+}
+
+footer img:hover, footer h6:hover{
+    transform:scale(1.3);
+}
+
